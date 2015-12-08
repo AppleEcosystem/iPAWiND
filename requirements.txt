@@ -3,3 +3,4 @@ pyrogram
 apscheduler
 aioboto3
 aiofiles
+TgCrypto
