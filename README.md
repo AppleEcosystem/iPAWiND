@@ -36,5 +36,12 @@ docker compose up -d
 # In bot/loader.py, update your Cloudflare R2 bucket settings
 # In bot/config.py, add your bot token and required API keys
 
+# run the bot
+python -m bot
+
+# or run the bought through screen
+screen -dmS bot python3 -m bot
+
+
 # Setup Complete
 # Your iPAWiND setup is now ready. If you encounter any issues, double-check the configuration files and ensure all packages are properly installed. or create issue on githuh
