@@ -27,7 +27,7 @@ Telegram Bot: [@ipawind_bot](https://t.me/ipawind_bot)
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y zip unzip build-essential checkinstall zlib1g-dev libssl-dev git make g++ pkg-config  libminizip-dev  zlib1g-dev zip unzip nodejs
-````
+```
 
 ```bash
 cd iPAWIND
