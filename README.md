@@ -79,4 +79,4 @@ screen -dmS bot python3 -m bot
 
 ## License
 
-ipawind is licensed under the terms of MIT License. See the [LICENSE](LICENSE) file.
+ipawind is licensed under the terms of MIT License. See the [LICENSE](LICENSE) file. 
