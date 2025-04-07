@@ -46,8 +46,9 @@ pip3 install -r requirements.txt
 # Step 3: Install Docker
 # Follow the Docker installation guide: https://docs.docker.com/engine/install/ubuntu/
 
-bash```
-docker compose up -d```
+```bash
+docker compose up -d
+```
 
 ### Step 4: setup cloudfalre worker shortner
 https://github.com/AppleEcosystem/ShortFlare
@@ -60,11 +61,13 @@ https://github.com/AppleEcosystem/ShortFlare
 #### In bot/loader.py, update your Cloudflare R2 bucket settings
 #### In bot/config.py, add your bot token and required API keys
 
-bash```
-python -m bot```
+```bash
+python -m bot
+```
 
-bash```
-screen -dmS bot python3 -m bot```
+```bash
+screen -dmS bot python3 -m bot
+```
 
 # Setup Complete
 # Your iPAWiND setup is now ready. If you encounter any issues, double-check the configuration files and ensure all packages are properly installed. or create issue on githuh
