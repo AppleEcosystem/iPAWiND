@@ -36,8 +36,8 @@ cd iPAWIND
 ```bash
 npm install node-forge ocsp && nodejs tools/checker/resources.js
 ```
+
 bash```
-# Install Python dependencies
 pip3 install -r requirements.txt
 ```
 
@@ -45,7 +45,6 @@ pip3 install -r requirements.txt
 # Follow the Docker installation guide: https://docs.docker.com/engine/install/ubuntu/
 
 bash```
-# After installing Docker, start the containers
 docker compose up -d
 ```
 
@@ -61,12 +60,10 @@ https://github.com/AppleEcosystem/ShortFlare
 #### In bot/config.py, add your bot token and required API keys
 
 bash```
-#run the bot
 python -m bot
 ```
 
 bash```
-# or run the bought through screen
 screen -dmS bot python3 -m bot
 ```
 
