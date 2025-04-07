@@ -53,6 +53,8 @@ docker compose up -d
 ### Step 4: setup cloudfalre worker shortner
 https://github.com/AppleEcosystem/ShortFlare
 
+
+
 ### Step 5: Configure Cloudflare R2 and Bot Settings
 
 #### Create an R2 bucket in your Cloudflare account.
