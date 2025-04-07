@@ -1,3 +1,4 @@
+
 # Telegram iOS app signer bot.
 
 iPAWiND is an iOS app signer bot for Telegram. It allows users to sign and install iOS applications directly through Telegram, making the sideloading process more accessible.
@@ -38,15 +39,13 @@ npm install node-forge ocsp && nodejs tools/checker/resources.js
 ```
 
 bash```
-pip3 install -r requirements.txt
-```
+pip3 install -r requirements.txt```
 
 # Step 3: Install Docker
 # Follow the Docker installation guide: https://docs.docker.com/engine/install/ubuntu/
 
 bash```
-docker compose up -d
-```
+docker compose up -d```
 
 ### Step 4: setup cloudfalre worker shortner
 https://github.com/AppleEcosystem/ShortFlare
@@ -60,12 +59,10 @@ https://github.com/AppleEcosystem/ShortFlare
 #### In bot/config.py, add your bot token and required API keys
 
 bash```
-python -m bot
-```
+python -m bot```
 
 bash```
-screen -dmS bot python3 -m bot
-```
+screen -dmS bot python3 -m bot```
 
 # Setup Complete
 # Your iPAWiND setup is now ready. If you encounter any issues, double-check the configuration files and ensure all packages are properly installed. or create issue on githuh
