@@ -38,8 +38,10 @@ cd iPAWIND
 npm install node-forge ocsp && nodejs tools/checker/resources.js
 ```
 
-python```
-pip3 install -r requirements.txt```
+```bash
+pip3 install -r requirements.txt
+```
+
 
 # Step 3: Install Docker
 # Follow the Docker installation guide: https://docs.docker.com/engine/install/ubuntu/
