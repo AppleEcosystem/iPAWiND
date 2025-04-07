@@ -40,7 +40,6 @@ cd iPAWIND
 npm install node-forge ocsp && nodejs tools/checker/resources.js
 ```
 
-bash```
 # Install Python dependencies
 pip3 install -r requirements.txt
 ```
@@ -48,27 +47,24 @@ pip3 install -r requirements.txt
 # Step 3: Install Docker
 # Follow the Docker installation guide: https://docs.docker.com/engine/install/ubuntu/
 
-```bash
 # After installing Docker, start the containers
 docker compose up -d
 ```
 
-# Step 4: setup cloudfalre worker shortner
+### Step 4: setup cloudfalre worker shortner
 https://github.com/AppleEcosystem/ShortFlare
 
-# Step 5: Configure Cloudflare R2 and Bot Settings
+### Step 5: Configure Cloudflare R2 and Bot Settings
 
-# Create an R2 bucket in your Cloudflare account.
-# Then, edit the following configuration files:
+#### Create an R2 bucket in your Cloudflare account.
+#### Then, edit the following configuration files:
 
-# In bot/loader.py, update your Cloudflare R2 bucket settings
-# In bot/config.py, add your bot token and required API keys
-
+#### In bot/loader.py, update your Cloudflare R2 bucket settings
+#### In bot/config.py, add your bot token and required API keys
 
 bash```
-# run the bot
+#run the bot
 python -m bot
-```
 
 bash```
 # or run the bought through screen
