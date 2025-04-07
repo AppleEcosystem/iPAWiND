@@ -75,3 +75,8 @@ screen -dmS bot python3 -m bot
 
 # Setup Complete
 # Your iPAWiND setup is now ready. If you encounter any issues, double-check the configuration files and ensure all packages are properly installed. or create issue on github
+
+
+## License
+
+ipawind is licensed under the terms of MIT License. See the [LICENSE](LICENSE) file.
