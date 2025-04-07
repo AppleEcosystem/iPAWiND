@@ -43,8 +43,8 @@ pip3 install -r requirements.txt
 ```
 
 
-# Step 3: Install Docker
-# Follow the Docker installation guide: https://docs.docker.com/engine/install/ubuntu/
+## Step 3: Install Docker
+- Follow the Docker installation guide: https://docs.docker.com/engine/install/ubuntu/
 
 ```bash
 docker compose up -d
