@@ -38,7 +38,7 @@ cd iPAWIND
 npm install node-forge ocsp && nodejs tools/checker/resources.js
 ```
 
-
+python```
 pip3 install -r requirements.txt```
 
 # Step 3: Install Docker
