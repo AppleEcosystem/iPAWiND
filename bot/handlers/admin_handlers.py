@@ -460,36 +460,3 @@ async def set_free_prov(message: types.Message, state: FSMContext):
     await utils.download(message.document, os.path.join(os.getcwd(), "sessions/free", "free_cert.mobileprovision"))
     await message.answer("done")
     await state.finish()
-
-
-
-@dp.message_handler(commands=['broadcast'])
-async def broadcast_message(message: types.Message):
-    message_text = message.get_args()
-
-    if not message_text:
-        return await message.reply("You need to provide a message to broadcast.")
-
-    # Retrieve user IDs from the database
-    cursor.execute("SELECT id FROM UsersLangs")
-    users = [item[0] for item in cursor.fetchall()]
-    logging.info(f"Found {len(users)} users to broadcast to.")
-
-    if not users:
-        return await message.answer("No users found to broadcast to.")
-
-    await message.answer(f"Broadcasting to {len(users)} users...")
-
-    success_count = 0
-    rate_limit = 1 / 2  # Pause duration in seconds to send 3 messages per second
-
-    for user_id in users:
-        try:
-            await bot.send_message(user_id, message_text, parse_mode=types.ParseMode.HTML)
-            logging.info(f"Message sent to user {user_id}")
-            success_count += 1
-            await asyncio.sleep(rate_limit)  # Pause to respect the rate limit of 3 messages per second
-        except (BotBlocked, ChatNotFound, UserDeactivated):
-            logging.warning(f"Failed to send message to user {user_id}")
-
-    await message.answer(f"Broadcast complete. Sent to {success_count}/{len(users)} users.")
