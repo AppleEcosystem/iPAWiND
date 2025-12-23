@@ -72,11 +72,15 @@ async def download_aiogram(document, destination_folder):
     return await bot.download_file(file_path, destination_dir=destination_folder)
 
 async def check_cert(cert: str, password: str) -> dict:
-    proc = await asyncio.create_subprocess_exec(
-        "node",
-        "tools/checker/index.js",
-        cert,
-        password,
+    # proc = await asyncio.create_subprocess_exec(
+    #     "node",
+    #     "tools/checker/index.js",
+    #     cert,
+    #     password,
+    #     stdout=asyncio.subprocess.PIPE,
+    #     stderr=asyncio.subprocess.PIPE)
+    proc = await asyncio.create_subprocess_shell(
+        f'node tools/checker/index.js {cert} {password}',
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE)
     output, _ = await proc.communicate()

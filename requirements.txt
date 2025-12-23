@@ -4,3 +4,4 @@ apscheduler
 aioboto3
 aiofiles
 TgCrypto
+jwt

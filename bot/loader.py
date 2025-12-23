@@ -11,7 +11,6 @@ from pyrogram import Client
 server = TelegramAPIServer.from_base("http://localhost:81")
 bot = Bot(bot_token, server=server)
 pyrogram_bot = Client(name="pyrobot", api_id=api_id, api_hash=api_hash, bot_token=bot_token, no_updates=True, max_concurrent_transmissions=20)
-pyrogram_bot.start()
 
 dp = Dispatcher(bot, storage=MemoryStorage())
 
@@ -32,5 +31,5 @@ r2_plist = R2Storage('https://Example.r2.cloudflarestorage.com',
 
 from bot.utils.account_manager import AccountManager, ChineseApi
 
-account_manager = AccountManager.from_list(accounts, reseller_accounts)
 chinese_api = ChineseApi()
+account_manager = AccountManager.from_list(accounts, reseller_accounts)
